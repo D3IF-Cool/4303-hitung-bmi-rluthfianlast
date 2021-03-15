@@ -5,6 +5,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.findNavController
+import org.d3if0084.hitungbmi.R
 import org.d3if0084.hitungbmi.databinding.FragmentHitungBinding
 
 class HitungFragment : Fragment() {
@@ -15,10 +17,17 @@ class HitungFragment : Fragment() {
             layoutInflater, container, false)
 
         binding.button.setOnClickListener { hitungBmi() }
+        binding.saranButton.setOnClickListener { view: View ->
+            view.findNavController().navigate(
+                R.id.action_hitungFragment_to_saranFragment
+            )
+        }
         return binding.root
     }
 
-    private fun hitungBmi(): Any {
+    private fun hitungBmi(){
+
+        binding.saranButton.visibility = View.VISIBLE
 
     }
 
