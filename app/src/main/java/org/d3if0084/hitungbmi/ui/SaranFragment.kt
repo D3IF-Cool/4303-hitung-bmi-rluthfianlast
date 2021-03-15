@@ -11,11 +11,13 @@ import org.d3if0084.hitungbmi.data.KategoriBmi
 import org.d3if0084.hitungbmi.databinding.FragmentSaranBinding
 
 class SaranFragment : Fragment() {
+    private val args: SaranFragmentArgs by navArgs()
     private lateinit var binding: FragmentSaranBinding
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
         binding = FragmentSaranBinding.inflate(
             layoutInflater, container, false)
+        updateUI(args.kategori)
         return binding.root
     }
     private fun updateUI(kategori: KategoriBmi) {

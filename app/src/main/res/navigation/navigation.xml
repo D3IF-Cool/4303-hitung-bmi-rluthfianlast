@@ -24,7 +24,7 @@
         tools:layout="@layout/fragment_saran">
         <argument
             android:name="kategori"
-            app:argType="org.d3if0010.hitungbmi.data.KategoriBmi" />
+            app:argType="org.d3if0084.hitungbmi.data.KategoriBmi" />
     </fragment>
     <fragment
         android:id="@+id/aboutFragment"
