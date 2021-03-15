@@ -9,6 +9,7 @@ import androidx.fragment.app.Fragment
 import org.d3if0084.hitungbmi.R
 import org.d3if0084.hitungbmi.data.KategoriBmi
 import org.d3if0084.hitungbmi.databinding.FragmentSaranBinding
+import androidx.navigation.fragment.navArgs
 
 class SaranFragment : Fragment() {
     private val args: SaranFragmentArgs by navArgs()
